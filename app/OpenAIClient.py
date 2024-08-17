@@ -1,10 +1,8 @@
 from openai import OpenAI
 import os
-from dotenv import load_dotenv
 
 from dto.Response import Response
 
-load_dotenv()
 openai_key = os.getenv("OPENAI_KEY")
 
 class OpenAIClient:
