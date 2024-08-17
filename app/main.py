@@ -10,6 +10,3 @@ openai_client = OpenAIClient()
 def chat(prompt: Prompt):
     response = openai_client.chat(message=prompt.prompt)
     return response
-
-if __name__ == "__main__":
-    uvicorn.run(app)
