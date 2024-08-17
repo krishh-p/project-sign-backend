@@ -21,7 +21,7 @@ for phrase in classes:
     print(f"currently getting images for '{phrase}'")
 
     while True:
-        ret, frame = camera.read()
+        captured_successfully, frame = camera.read()
         cv2.imshow("frame", frame)
         if (cv2.waitKey(25) == ord("c")): # press 'c' on keyboard to begin getting images for current phrase
             break
@@ -29,7 +29,7 @@ for phrase in classes:
     num_of_pics = 0
 
     while num_of_pics < size_of_dataset:
-        ret, frame = camera.read()
+        captured_successfully, frame = camera.read()
         cv2.imshow("frame", frame)
         cv2.waitKey(25)
         cv2.imwrite(os.path.join(images_folder, phrase, f"{str(num_of_pics)}.jpg"), frame)
