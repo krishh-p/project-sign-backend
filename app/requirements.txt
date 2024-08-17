@@ -2,5 +2,3 @@ fastapi
 uvicorn
 pydantic
 openai
-dotenv
-os
