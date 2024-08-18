@@ -7,4 +7,4 @@ To run the app, install the necessary dependencies and run:
 To run the test webpage, run:
 **streamlit run model/cv_app.py**
 
-Link to frontend repository: https://github.com/krishh-p/project-sign-backend
+Link to frontend repository: https://github.com/anthonytecsa/project-sign-frontend
