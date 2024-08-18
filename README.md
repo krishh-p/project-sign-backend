@@ -7,3 +7,4 @@ To run the app, install the necessary dependencies and run:
 **python app/main.py**
 
 To URL for the endpoints is: http://127.0.0.1:8000
+
