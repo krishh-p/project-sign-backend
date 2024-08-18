@@ -8,7 +8,20 @@ import time
 
 model = tf.keras.models.load_model('./model/sign_language_model.h5')
 
-camera = cv2.VideoCapture(0)
+# attempt to open the camera
+camera_index = None
+for i in range(5):
+    camera = cv2.VideoCapture(i)
+    if camera.isOpened():
+        camera_index = i
+        camera.release()
+        break
+
+if camera_index is None:
+    st.write("Unable to access the camera. Please make sure a camera is connected and accessible")
+    st.stop()
+
+camera = cv2.VideoCapture(camera_index)
 mp_drawing = mp.solutions.drawing_utils
 mp_drawing_styles = mp.solutions.drawing_styles
 mp_hands = mp.solutions.hands
