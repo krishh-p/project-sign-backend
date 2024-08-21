@@ -1,5 +1,5 @@
 # project-sign-backend
-This holds the backend and image classification model operations for ProjectSign, our submission to IgnitionHacks 2024
+This holds the backend and image classification model operations for Project Sign, our submission to IgnitionHacks 2024
 
 To run the app, install the necessary dependencies and run:
 **python app/main.py**
